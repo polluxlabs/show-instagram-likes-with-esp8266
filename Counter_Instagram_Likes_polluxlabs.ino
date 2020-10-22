@@ -79,7 +79,7 @@ void loop() {
   }
 
   //define memory size for JSON
-  const size_t capacity = JSON_ARRAY_SIZE(1) + JSON_ARRAY_SIZE(5) + 7 * JSON_OBJECT_SIZE(1) + 2 * JSON_OBJECT_SIZE(2) + 5 * JSON_OBJECT_SIZE(3) + JSON_OBJECT_SIZE(22) + 3974;
+  const size_t capacity = 4 * JSON_ARRAY_SIZE(0) + JSON_ARRAY_SIZE(1) + JSON_ARRAY_SIZE(3) + JSON_ARRAY_SIZE(5) + 15 * JSON_OBJECT_SIZE(1) + 8 * JSON_OBJECT_SIZE(2) + 5 * JSON_OBJECT_SIZE(3) + 3 * JSON_OBJECT_SIZE(14) + JSON_OBJECT_SIZE(24) + 4950;
   DynamicJsonDocument doc(capacity);
 
   if (!client.find("\"edge_owner_to_timeline_media\":")) {
